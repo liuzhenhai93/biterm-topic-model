@@ -1,8 +1,8 @@
 # biterm-topic-model
 重构论文A Biterm Topic Model for Short Texts提供的源代码，编译成一个python 扩展模块
 
-编译：
-make 
+编译：   
+make     
 如果是windows平台，需要小修改
 
 安装:
