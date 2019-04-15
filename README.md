@@ -11,12 +11,20 @@ python setup.py install
 
 使用 demo:
 
-from biterm.Model import bitermModel as model
-mymodel=Model(20,99509,2.5,0.01,5,101)
-mymodel.train("data/data.txt")
-relist=mymodel.predict([232,435,56,76,890])
-mymodel.savemodel("save/")
-del mymodel
-mymodel=Model(20,99509,2.5,0.01,5,101)
-mymodel.loadmodel("save/")
+from biterm.Model import bitermModel as model   
+
+mymodel=Model(20,99509,2.5,0.01,5,101)    
+
+mymodel.train("data/data.txt")    
+
+relist=mymodel.predict([232,435,56,76,890])    
+
+mymodel.savemodel("save/")    
+
+del mymodel   
+
+mymodel=Model(20,99509,2.5,0.01,5,101)   
+
+mymodel.loadmodel("save/")   
+
 relist=mymodel.predict([232,435,56,76,890])
