@@ -13,11 +13,11 @@ python setup.py install
 
 from biterm.Model import bitermModel as model   
 
-mymodel=Model(20,99509,2.5,0.01,5,101)    
+mymodel=Model(20,99509,2.5,0.01,5,101)    #topic、voc size、alpha、belta、savestep、iteration
 
 mymodel.train("data/data.txt")    
 
-relist=mymodel.predict([232,435,56,76,890])    
+relist=mymodel.predict([232,435,56,76,890])    #words indexs
 
 mymodel.savemodel("save/")    
 
